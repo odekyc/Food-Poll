@@ -1,1 +1,1 @@
-https://odefoodpollfreecamp.herokuapp.com/
+https://foodpoll-howyoueat.herokuapp.com/
