@@ -1,1 +1,1 @@
-https://foodpoll-howyoueat.herokuapp.com/
+https://food-poll-nutrition.herokuapp.com/
