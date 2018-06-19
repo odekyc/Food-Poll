@@ -2,10 +2,10 @@
 -- version 4.0.10deb1
 -- http://www.phpmyadmin.net
 --
--- 主机: 127.0.0.1
--- 生成日期: 2018-04-22 02:34:08
--- 服务器版本: 5.5.50-0ubuntu0.14.04.1
--- PHP 版本: 5.5.9-1ubuntu4.19
+-- Host: 127.0.0.1
+-- Generation Time: Jun 19, 2018 at 05:58 AM
+-- Server version: 5.5.50-0ubuntu0.14.04.1
+-- PHP Version: 5.5.9-1ubuntu4.19
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,30 +17,34 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- 数据库: `ode_food_poll`
+-- Database: `ode_food_poll`
 --
 
 -- --------------------------------------------------------
 
+DROP TABLE `food_list`;
+DROP TABLE `user_polls`;
+DROP TABLE `user_saved`;
+DROP TABLE `user_votes`;
 --
--- 表的结构 `food_list`
+-- Table structure for table `food_list`
 --
 
 CREATE TABLE IF NOT EXISTS `food_list` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `category` varchar(30) NOT NULL,
-  `foodname` varchar(300) DEFAULT NULL,
-  `serving_standard` varchar(80) NOT NULL,
-  `serving_sizes` varchar(300) NOT NULL,
-  `actual_serving_count` varchar(300) NOT NULL,
-  `saved` varchar(30) NOT NULL,
-  `usermade` varchar(30) NOT NULL,
-  `creator_username` varchar(70) NOT NULL,
+  `category` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `foodname` varchar(300) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `serving_standard` varchar(80) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `serving_sizes` varchar(300) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `actual_serving_count` varchar(300) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `saved` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `usermade` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `creator_username` varchar(70) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=152 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=152 ;
 
 --
--- 转存表中的数据 `food_list`
+-- Dumping data for table `food_list`
 --
 
 INSERT INTO `food_list` (`id`, `category`, `foodname`, `serving_standard`, `serving_sizes`, `actual_serving_count`, `saved`, `usermade`, `creator_username`) VALUES
@@ -156,24 +160,24 @@ INSERT INTO `food_list` (`id`, `category`, `foodname`, `serving_standard`, `serv
 -- --------------------------------------------------------
 
 --
--- 表的结构 `user_polls`
+-- Table structure for table `user_polls`
 --
 
 CREATE TABLE IF NOT EXISTS `user_polls` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(30) NOT NULL,
-  `foodname` varchar(59) NOT NULL,
-  `serving_standard` varchar(30) NOT NULL,
-  `serving_sizes` varchar(50) NOT NULL,
+  `username` varchar(30) CHARACTER SET latin1 NOT NULL,
+  `foodname` varchar(59) CHARACTER SET latin1 NOT NULL,
+  `serving_standard` varchar(30) CHARACTER SET latin1 NOT NULL,
+  `serving_sizes` varchar(50) CHARACTER SET latin1 NOT NULL,
   `created_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `profile_pic` varchar(120) NOT NULL,
-  `category` varchar(25) NOT NULL,
+  `profile_pic` varchar(120) CHARACTER SET latin1 NOT NULL,
+  `category` varchar(25) CHARACTER SET latin1 NOT NULL,
   `food_list_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=148 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=148 ;
 
 --
--- 转存表中的数据 `user_polls`
+-- Dumping data for table `user_polls`
 --
 
 INSERT INTO `user_polls` (`id`, `username`, `foodname`, `serving_standard`, `serving_sizes`, `created_time`, `profile_pic`, `category`, `food_list_id`) VALUES
@@ -188,21 +192,21 @@ INSERT INTO `user_polls` (`id`, `username`, `foodname`, `serving_standard`, `ser
 -- --------------------------------------------------------
 
 --
--- 表的结构 `user_saved`
+-- Table structure for table `user_saved`
 --
 
 CREATE TABLE IF NOT EXISTS `user_saved` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `creator_username` varchar(50) NOT NULL,
-  `foodname` varchar(65) NOT NULL,
-  `saver_username` varchar(40) NOT NULL,
+  `creator_username` varchar(50) CHARACTER SET latin1 NOT NULL,
+  `foodname` varchar(65) CHARACTER SET latin1 NOT NULL,
+  `saver_username` varchar(40) CHARACTER SET latin1 NOT NULL,
   `food_list_id` int(11) NOT NULL,
-  `category` varchar(30) NOT NULL,
+  `category` varchar(30) CHARACTER SET latin1 NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=57 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=57 ;
 
 --
--- 转存表中的数据 `user_saved`
+-- Dumping data for table `user_saved`
 --
 
 INSERT INTO `user_saved` (`id`, `creator_username`, `foodname`, `saver_username`, `food_list_id`, `category`) VALUES
@@ -244,21 +248,21 @@ INSERT INTO `user_saved` (`id`, `creator_username`, `foodname`, `saver_username`
 -- --------------------------------------------------------
 
 --
--- 表的结构 `user_votes`
+-- Table structure for table `user_votes`
 --
 
 CREATE TABLE IF NOT EXISTS `user_votes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `foodname` varchar(100) NOT NULL,
+  `foodname` varchar(100) CHARACTER SET latin1 NOT NULL,
   `vote` int(11) NOT NULL,
   `vote_timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `username` varchar(100) NOT NULL,
+  `username` varchar(100) CHARACTER SET latin1 NOT NULL,
   `food_list_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=130 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=130 ;
 
 --
--- 转存表中的数据 `user_votes`
+-- Dumping data for table `user_votes`
 --
 
 INSERT INTO `user_votes` (`id`, `foodname`, `vote`, `vote_timestamp`, `username`, `food_list_id`) VALUES
