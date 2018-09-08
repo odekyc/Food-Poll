@@ -22,10 +22,10 @@ SET time_zone = "+00:00";
 
 -- --------------------------------------------------------
 
-DROP TABLE `food_list`;
-DROP TABLE `user_polls`;
-DROP TABLE `user_saved`;
-DROP TABLE `user_votes`;
+DROP TABLE IF EXISTS `food_list`;
+DROP TABLE IF EXISTS `user_polls`;
+DROP TABLE IF EXISTS `user_saved`;
+DROP TABLE IF EXISTS `user_votes`;
 --
 -- Table structure for table `food_list`
 --
