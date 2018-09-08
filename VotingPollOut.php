@@ -1,7 +1,7 @@
 <head>
      <link rel='stylesheet' type='text/css' href='stylesheet.css?<?php echo time(); ?>' />
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-     <script src="https://d3js.org/d3.v3.min.js"></script>
+     <script src="jQuery-1.12.4.min.js"></script>
+     <script src="d3.v3.min.js"></script>
 </head>
 
 <?php
@@ -139,7 +139,7 @@
 ?>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="angular-1.4.8.min.js"></script>
 <div id='upper-div'><h1 id='upper-div-title'>Ode-Food-Poll</h1><div id='home-div-out' class='block'><span class='block-span'>Home</span></div></div> 
        <div id='voting-poll-div'><div id="foodname-div"><span id="foodname-span"></span><span id="serving-std-span"></span><span id="serving_sz">Serving Size</span><span id="actual_serving_ct">(Servings Count)</span><span id="idliketovote">I'd Like to Vote For(Daily Serving Size):</span>
        <form action="UpdateVote.php" id="voteform" method="post">
