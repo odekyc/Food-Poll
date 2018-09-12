@@ -4,16 +4,14 @@
     $cleardb_username = $cleardb_url["user"];
     $cleardb_password = $cleardb_url["pass"];
     $cleardb_db       = substr($cleardb_url["path"],1);
-
     $active_group = 'default';
     $query_builder = TRUE;
-
     $db['default'] = array(
         'dsn'   => '',
-        'hostname' => 'us-cdbr-iron-east-04.cleardb.net',
-        'username' => 'b96a0d06b41e3a',
-        'password' => 'a0f6bf21',
-        'database' => 'heroku_d7e69b0103484d2',
+        'hostname' => 'us-cdbr-iron-east-05.cleardb.net',
+        'username' => 'b1a21033157577',
+        'password' => 'b2cfecca',
+        'database' => 'heroku_537f097b523902b',
         'dbdriver' => 'mysqli',
         'dbprefix' => '',
         'pconnect' => FALSE,
@@ -29,4 +27,4 @@
         'failover' => array(),
         'save_queries' => TRUE
     );
-?>
+ ?>
