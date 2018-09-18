@@ -63,7 +63,7 @@
 
 ?>
 
-<link rel='stylesheet' type='text/css' href='stylesheet.css?<?php echo time(); ?>' />
+<link rel='stylesheet' type='text/css' href='./css/stylesheet.css?<?php echo time(); ?>' />
 
 <div id='upper-div'><h1 id='upper-div-title'>Ode-Food-Polls</h1><div id='home-div-in' class='block'><span class='block-span'>Home</span></div><div id='mypolls' class='block'><span id='mypolls-span' class='block-span'><center>My Polls</center></span><</div><div id='newpoll' class='block'><span id='newpoll-span' class='block-span'>New Poll</span><</div></div>
 <div id='newpoll-main-div' style="background-color: #f4f4d7;"><div id='newpoll-main-inner-div' style="background-color: #b0cbe8;"><span id='newpoll-main-title-span' style="color: #b3804d;">Make a New Poll:</span>
@@ -145,7 +145,7 @@
 </div>
 <div id="#ode-h5-div"><h5>This "Ode Food Poll" app is built by <a href="https://github.com/odelva">@Ode</a> of freecodecamp<br><br> following the instructions of <a href="https://www.freecodecamp.com/challenges/build-a-voting-app">"Basejump: Build a Voting App | Free Code Camp"</a><br><br>Github repository: <a href="https://github.com/odelva">https://github.com/odelva</a><br><br>Code Pen: <a href="http://codepen.io/odelva">http://codepen.io/odelva</a></h5>
  </div>
-<script src="jQuery-1.12.4.min.js"></script>
+<script src="./js/jQuery-1.12.4.min.js"></script>
 <script type="text/javascript">
        $("form").submit(function(){
             // $("#upper-div").css("width", "1300px");

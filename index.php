@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
    <head>
-     <link rel='stylesheet' type='text/css' href='stylesheet.css?<?php echo time(); ?>' />
-     <script src="jQuery-1.12.4.min.js"></script>
+     <link rel='stylesheet' type='text/css' href='./css/stylesheet.css?<?php echo time(); ?>' />
+     <script src="./js/jQuery-1.12.4.min.js"></script>
 
  
    </head>

@@ -1,7 +1,7 @@
 <head>
-     <link rel='stylesheet' type='text/css' href='stylesheet.css?<?php echo time(); ?>' />
+     <link rel='stylesheet' type='text/css' href='./css/stylesheet.css?<?php echo time(); ?>' />
      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-     <script src="jQuery-1.12.4.min.js"></script>
+     <script src="./js/jQuery-1.12.4.min.js"></script>
 </head>
 <?php
      
@@ -11,10 +11,10 @@
      include 'keys.php';
      include 'database.php';
 
-     session_start();
+    session_start();
      
-     echo '<a id="twitterbtnsignout" href="TwitterLogout.php">Logout</a>';
-     $_SESSION['dbupdated']="none";
+    echo '<a id="twitterbtnsignout" href="TwitterLogout.php">Logout</a>';
+    $_SESSION['dbupdated']="none";
     $_SESSION['dbupdate-error']= "";
     $_SESSION['mypoll-deleted']=false;
     
@@ -149,7 +149,7 @@
     ?>
     <!-- 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-<script src="jQuery-1.12.4.min.js"></script>
+<script src="./js/jQuery-1.12.4.min.js"></script>
 <script type="text/javascript">
 
     var username="<?php echo $_SESSION['username'] ?>";

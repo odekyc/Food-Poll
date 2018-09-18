@@ -1,6 +1,6 @@
 <head>
-     <link rel='stylesheet' type='text/css' href='stylesheet.css?<?php echo time(); ?>' />
-     <script src="jQuery-1.12.4.min.js"></script>
+     <link rel='stylesheet' type='text/css' href='./css/stylesheet.css?<?php echo time(); ?>' />
+     <script src="./js/jQuery-1.12.4.min.js"></script>
 
 </head>
 
@@ -26,7 +26,7 @@
      
        
       
-     echo "<link rel='stylesheet' type='text/css' href='stylesheet.css?<?php echo time(); ?>' />"; 
+     echo "<link rel='stylesheet' type='text/css' href='./css/stylesheet.css?<?php echo time(); ?>' />"; 
   
      echo '<a id="twitterbtnsignin" href="' . $twitterObj->getAuthenticateUrl() . '">
      <img src="twitterlogin.png" alt="sign in with twitter" />
@@ -108,7 +108,7 @@
     
 ?>
 
-<script src="angular-1.4.8.min.js"></script>
+<script src="./js/angular-1.4.8.min.js"></script>
 <div id='upper-div'><h1 id='upper-div-title'>Ode-Food-Polls</h1><div id='home-div-out' class='block'><span class='block-span'>Home</span></div></div> 
      <div id='main-div'><div id='main-div-title'><span id='main-title-span'>Ode's Food Polls</span><span id='main-descrpt-span'>Below are polls hosted by Ode<br>Select a poll to see the results and vote, or sign-in to make a new poll.</span></div>
      <div id='central-div' ng-app="myApp" ng-controller="myCtrl">
@@ -173,7 +173,7 @@
         
         
     </script>
-    <script src="jQuery-1.12.4.min.js"></script>
+    <script src="./js/jQuery-1.12.4.min.js"></script>
     <script type="text/javascript">
     
      $("#home-div-out").css("background-color", "#ace600"); 
