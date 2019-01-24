@@ -158,7 +158,7 @@
     $("#mypolls-main-div").css("width", "1300px");
     $("#main-title-span").css("left", "240px");
     
-     $("#userpolls-div span").text(username+" Added Foods");
+     $("#userpolls-div span").text("Foods Created By "+username);
      
      $("#uservotes-div span").text("Other Foods "+username+" Saved");
     
