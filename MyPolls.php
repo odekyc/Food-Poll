@@ -50,12 +50,12 @@
 ?>
 
 
-<div id='upper-div'><h1 id='upper-div-title'>Ode-Food-Polls</h1><div id='home-div-in' class='block'><span class='block-span'>Home</span></div><div id='mypolls' class='block'><span id='mypolls-span' class='block-span'><center>My Polls</center></span><</div><div id='newpoll' class='block'><span id='newpoll-span' class='block-span'>New Poll</span></div></div>
-<div id='mypolls-main-div'><div id='main-div-title'><span id='main-title-span'>My Food Polls</span><span id='main-descrpt-span'>Below are polls you own<br>Select a poll to see the results of your polls, or <a style="color:#80ffbf;" href="NewPoll.php?oauth_token="+"<?php echo $_SESSION["oauth_token"] ?>"+"&oauth_verifier="+"<?php echo $_SESSION["oauth_verifier"] ?>"
->make a new poll</a>.</span></div>
+<div id='upper-div'><h1 id='upper-div-title'>Food-Poll</h1><div id='home-div-in' class='block'><span class='block-span'>Home</span></div><div id='mypolls' class='block'><span id='mypolls-span' class='block-span'><center>My Foods</center></span><</div><div id='newpoll' class='block'><span id='newpoll-span' class='block-span'>New Food</span></div></div>
+<div id='mypolls-main-div'><div id='main-div-title'><span id='main-title-span'>My Food Poll</span><span id='main-descrpt-span'>Below are your foods<br>Select a food to see the results of your votes, or <a style="color:#80ffbf;" href="NewPoll.php?oauth_token="+"<?php echo $_SESSION["oauth_token"] ?>"+"&oauth_verifier="+"<?php echo $_SESSION["oauth_verifier"] ?>"
+>add a new food</a>.</span></div>
 
 <div id='central-div'>
-    <div id='userpolls-div'><span class='ingre-name'>User Made Polls</span></div>
+    <div id='userpolls-div'><span class='ingre-name'>User Added Foods</span></div>
 <?php
 
       $userpolls_sql = "SELECT * FROM food_list WHERE creator_username = '".$_SESSION["username"]."' ORDER BY category ASC";
@@ -89,7 +89,7 @@
     
     $usersaved_alreadyshown=array();
     
-     echo "<div id='uservotes-div'><span class='ingre-name'>Other Polls User Has Voted On</span></div>";
+     echo "<div id='uservotes-div'><span class='ingre-name'>Other Foods User Has Voted On</span></div>";
      
      $bigrow_count+=1;
       $usersaved_sql = "SELECT * FROM user_saved Where saver_username = '".$_SESSION["username"]."' AND creator_username != '".$_SESSION["username"]."' ORDER BY category ASC";
@@ -139,7 +139,7 @@
 </div>
 
 </div>
-<div id="ode-h5-div"><h5>This "Ode Food Poll" app is built by <a href="https://github.com/odelva">@Ode</a> of freecodecamp<br><br> following the instructions of <a href="https://www.freecodecamp.com/challenges/build-a-voting-app">"Basejump: Build a Voting App | Free Code Camp"</a><br><br>Github repository: <a href="https://github.com/odelva">https://github.com/odelva</a><br><br>Code Pen: <a href="http://codepen.io/odelva">http://codepen.io/odelva</a></h5>
+<div id="ode-h5-div"><h5>This "Food Poll" app is built by <a href="https://github.com/odelva">@odelva</a> of freecodecamp<br><br> following the instructions of <a href="https://www.freecodecamp.com/challenges/build-a-voting-app">"Basejump: Build a Voting App | Free Code Camp"</a><br><br>Github repository: <a href="https://github.com/odelva">https://github.com/odelva</a><br><br>Code Pen: <a href="http://codepen.io/odelva">http://codepen.io/odelva</a></h5>
 </div>
 
      <?php 
@@ -158,9 +158,9 @@
     $("#mypolls-main-div").css("width", "1300px");
     $("#main-title-span").css("left", "240px");
     
-     $("#userpolls-div span").text(username+" Made Polls");
+     $("#userpolls-div span").text(username+" Added Foods");
      
-     $("#uservotes-div span").text("Other Polls "+username+" Saved");
+     $("#uservotes-div span").text("Other Foods "+username+" Saved");
     
       $("#mypolls-main-div").css({"position" : "relative",
         "margin" : "auto",

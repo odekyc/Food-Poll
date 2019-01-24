@@ -140,8 +140,8 @@
 
 
 <script src="./js/angular-1.4.8.min.js"></script>
-<div id='upper-div'><h1 id='upper-div-title'>Ode-Food-Poll</h1><div id='home-div-out' class='block'><span class='block-span'>Home</span></div></div> 
-       <div id='voting-poll-div'><div id="foodname-div"><span id="foodname-span"></span><span id="serving-std-span"></span><span id="serving_sz">Serving Size</span><span id="actual_serving_ct">(Servings Count)</span><span id="idliketovote">I'd Like to Vote For(Daily Serving Size):</span>
+<div id='upper-div'><h1 id='upper-div-title'>Food-Poll</h1><div id='home-div-out' class='block'><span class='block-span'>Home</span></div></div> 
+       <div id='voting-poll-div'><div id="foodname-div"><span id="foodname-span"></span><span id="serving-std-span"></span><span id="serving_sz"># of Servings Consumed Daily</span><span id="actual_serving_ct">(# of Votes)</span><span id="idliketovote">How Many Servings I Consume Daily:</span>
        <form action="UpdateVote.php" id="voteform" method="post">
            <select id="voteselect" name="votevalue">
               <option id="firstvoteop" value="0">first</option>
@@ -155,7 +155,7 @@
        
        </div><div id="chart"><span id="totalvotes"></span></div></div>
 
-<div id='ode-h5-div'><h5 >This "Ode Food Poll" app is built by <a href="https://github.com/odelva">@Ode</a> of freecodecamp<br><br> following the instructions of <a href="https://www.freecodecamp.com/challenges/build-a-voting-app">"Basejump: Build a Voting App | Free Code Camp"</a><br><br>Github repository: <a href="https://github.com/odelva">https://github.com/odelva</a><br><br>Code Pen: <a href="http://codepen.io/odelva">http://codepen.io/odelva</a></h5>
+<div id='ode-h5-div'><h5 >This "Food Poll" app is built by <a href="https://github.com/odelva">@odelva</a> of freecodecamp<br><br> following the instructions of <a href="https://www.freecodecamp.com/challenges/build-a-voting-app">"Basejump: Build a Voting App | Free Code Camp"</a><br><br>Github repository: <a href="https://github.com/odelva">https://github.com/odelva</a><br><br>Code Pen: <a href="http://codepen.io/odelva">http://codepen.io/odelva</a></h5>
  </div>
 <script type="text/javascript">
 $(document).ready(function(){ 

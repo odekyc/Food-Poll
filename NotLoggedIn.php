@@ -109,8 +109,8 @@
 ?>
 
 <script src="./js/angular-1.4.8.min.js"></script>
-<div id='upper-div'><h1 id='upper-div-title'>Ode-Food-Polls</h1><div id='home-div-out' class='block'><span class='block-span'>Home</span></div></div> 
-     <div id='main-div'><div id='main-div-title'><span id='main-title-span'>Ode's Food Polls</span><span id='main-descrpt-span'>Below are polls hosted by Ode<br>Select a poll to see the results and vote, or sign-in to make a new poll.</span></div>
+<div id='upper-div'><h1 id='upper-div-title'>Food-Poll</h1><div id='home-div-out' class='block'><span class='block-span'>Home</span></div></div> 
+     <div id='main-div'><div id='main-div-title'><span id='main-title-span'>Food Poll</span><span id='main-descrpt-span'>Below is a list of common foods/ingredients <br>Select a food to see its voting results and place your vote, or sign-in<br>to add a new food.</span></div>
      <div id='central-div' ng-app="myApp" ng-controller="myCtrl">
         <?php
              $sql = "SELECT * FROM food_list ORDER BY category ASC";
@@ -152,7 +152,7 @@
      
      </div>
      </div>
-      <div id="ode-h5-div"><h5>This "Ode Food Poll" app is built by <a href="https://github.com/odelva">@Ode</a> of freecodecamp<br><br> following the instructions of <a href="https://www.freecodecamp.com/challenges/build-a-voting-app">"Basejump: Build a Voting App | Free Code Camp"</a><br><br>Github repository: <a href="https://github.com/odelva">https://github.com/odelva</a><br><br>Code Pen: <a href="http://codepen.io/odelva">http://codepen.io/odelva</a></h5>
+      <div id="ode-h5-div"><h5>This "Food Poll" app is built by <a href="https://github.com/odelva">@odelva</a> of freecodecamp<br><br> following the instructions of <a href="https://www.freecodecamp.com/challenges/build-a-voting-app">"Basejump: Build a Voting App | Free Code Camp"</a><br><br>Github repository: <a href="https://github.com/odelva">https://github.com/odelva</a><br><br>Code Pen: <a href="http://codepen.io/odelva">http://codepen.io/odelva</a></h5>
       
       </div>
       

@@ -133,7 +133,7 @@ form{
     font-family: Arial;
     font-size: 6em;
     top: 60px;
-    left: 165px;
+    left: 336px;
 }
 
 #foodname-form{
@@ -347,6 +347,7 @@ h5{
 #mypolls-span{
     position: absolute;
     left: 7px;
+    font-size: 1.4em;
 }
 
 #newpoll{
@@ -359,6 +360,7 @@ h5{
 #newpoll-span{
     position: absolute;
     left: 5px;
+    font-size: 1.4em;
 }
 
 #newpoll:hover{

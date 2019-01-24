@@ -8,10 +8,10 @@
     $query_builder = TRUE;
     $db['default'] = array(
         'dsn'   => '',
-        'hostname' => 'us-cdbr-iron-east-05.cleardb.net',
-        'username' => 'b1a21033157577',
-        'password' => 'b2cfecca',
-        'database' => 'heroku_537f097b523902b',
+        'hostname' => 'us-cdbr-iron-east-01.cleardb.net',
+        'username' => 'bbb89c82b90f21',
+        'password' => '653a4148',
+        'database' => 'heroku_b788bf6ff6abd29',
         'dbdriver' => 'mysqli',
         'dbprefix' => '',
         'pconnect' => FALSE,
